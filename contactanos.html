@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conctactanos</title>
@@ -9,47 +11,66 @@
 
 <body>
     <header>
-        <span>
-            <a href="./index.html"><img src="./Logo_2024.png" alt="" width="100"></a>
-        </span>
-        <span>
-            <a href="./quienes_somos.html">QUIÉNES SOMOS?</a>
-        </span>
-        <span>
-            <a href="./servicios.html">SERVICIOS</a>
-        </span>
-        <span>
-            <a href="./contactanos.html">CONTÁCTANOS</a>
-        </span>
+        <div class="header_container">
+            <div id="logo">
+                <div>
+                    <a href="./index.html"><img src="./Logo_2024_sinfondo.png" alt=""></a>
+                </div>
+            </div>
+            <div id="menu">
+                <div>
+                    <a href="./quienes_somos.html">QUIÉNES SOMOS?</a>
+                </div>
+                <div>
+                    <a href="./servicios.html">SERVICIOS</a>
+                </div>
+                <div>
+                    <a href="./contactanos.html">CONTÁCTANOS</a>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <div>
-            <h2>Formulario de contacto</h2>
-        </div>
-        <form action="">
-            <div>
-                <label for="nombres">Nombres: </label>
-                <input type="text" name="nombres">
+        <div id="form_container">
+            <div id="titulo_form">
+                <h2>Formulario de contacto</h2>
             </div>
+            <form action="">
+                <div id="form_content">
+                    <div>
+                        <label for="nombres">Nombres: </label>
+                        <input type="text" name="nombres">
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos: </label>
+                        <input type="text" name="apellidos">
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <button>ENVIAR</button>
+                    </div>
+                </div>
+            </form>
             <div>
-                <label for="apellidos">Apellidos: </label>
-                <input type="text" name="apellidos">
+                <p>Nos pondremos en contacto lo más pronto posible. ¡Gracias!</p>
             </div>
-            <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email">
-            </div>
-            <button>ENVIAR</button>
-        </form>
-        <div>
-            <p>Nos pondremos en contacto lo más pronto posible. ¡Gracias!</p>
         </div>
     </main>
     <footer>
-        <h2>Síguenos en:</h2>
-        <span><img src="./fb.png" alt="" width="30"></span>
-        <span><img src="./ins.png" alt="" width="30"></span>
-        <span><img src="./tw.png" alt="" width="30"></span>
+        <div id="footer_container">
+            <div>
+                <img src="./fb.png" alt="">
+            </div>
+            <div>
+                <img src="./ins.png" alt="">
+            </div>
+            <div>
+                <img src="./tw.png" alt="">
+            </div>
+        </div>
     </footer>
 </body>
 
